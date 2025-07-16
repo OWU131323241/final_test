@@ -5,9 +5,7 @@ import google.generativeai as genai
 
 st.title("🌤️ AIお出かけスポット提案アプリ")
 
-
-owm_api_key = st.sidebar.text_input("🔑 OpenWeatherMap APIキー", type="password")
-gemini_api_key = st.sidebar.text_input("🔑 Gemini APIキー", type="password")
+genai.configure(api_key=gemini_api_key)
 
 
 if gemini_api_key:
