@@ -8,10 +8,6 @@ st.title("🌤️ AIお出かけスポット提案アプリ")
 genai.configure(api_key=gemini_api_key)
 
 
-if gemini_api_key:
-    genai.configure(api_key=gemini_api_key)
-
-
 place_name = st.text_input("📍 行きたい場所（市区町村もOK・日本語）", placeholder="例: 渋谷区, 京都市, 札幌")
 date = st.date_input("📅 日付を選択")
 time = st.time_input("🕒 時間を選択")
