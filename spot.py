@@ -5,6 +5,9 @@ import google.generativeai as genai
 
 st.title("🌤️ AIお出かけスポット提案アプリ")
 
+owm_api_key = st.secrets["owm_api_key"]
+gemini_api_key = st.secrets["gemini_api_key"]
+
 genai.configure(api_key=gemini_api_key)
 
 
